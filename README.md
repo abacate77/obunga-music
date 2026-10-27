@@ -2,19 +2,25 @@
 
 Aplicativo de música para Windows x64 e Android 7 ou superior, com biblioteca local e catálogos selecionáveis YouTube, YouTube Music e Spotify.
 
-## Baixar a versão 1.5.2
+## Baixar a versão 1.5.3
 
-- [Windows — EXE gráfico](https://github.com/abacate77/obunga-music/releases/download/v1.5.2/ObungaMusic-1.5.2.exe)
-- [Android — APK](https://github.com/abacate77/obunga-music/releases/download/v1.5.2/ObungaMusic-1.5.2.apk)
-- [Código completo e arquivos de compilação](https://github.com/abacate77/obunga-music/releases/download/v1.5.2/ObungaMusic-1.5.2-Codigo.zip)
-- [Notas da versão](https://github.com/abacate77/obunga-music/releases/tag/v1.5.2)
-- [SHA-256 dos arquivos](https://github.com/abacate77/obunga-music/releases/download/v1.5.2/SHA256SUMS.txt)
+- [Windows — EXE gráfico](https://github.com/abacate77/obunga-music/releases/download/v1.5.3/ObungaMusic-1.5.3.exe)
+- [Android — APK](https://github.com/abacate77/obunga-music/releases/download/v1.5.3/ObungaMusic-1.5.3.apk)
+- [Código completo e arquivos de compilação](https://github.com/abacate77/obunga-music/releases/download/v1.5.3/ObungaMusic-1.5.3-Codigo.zip)
+- [Notas da versão](https://github.com/abacate77/obunga-music/releases/tag/v1.5.3)
+- [SHA-256 dos arquivos](https://github.com/abacate77/obunga-music/releases/download/v1.5.3/SHA256SUMS.txt)
 
-O código completo está no arquivo **ObungaMusic-1.5.2-Codigo.zip** da release. O arquivo automático “Source code” do GitHub corresponde apenas aos arquivos deste repositório de distribuição.
+O código completo está no arquivo **ObungaMusic-1.5.3-Codigo.zip** da release. O arquivo automático “Source code” do GitHub corresponde apenas aos arquivos deste repositório de distribuição.
 
 No Windows, abra o EXE sem CMD. .NET, Python, Java e LibVLC acompanham o pacote; o [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) precisa estar instalado. No Android, instale o APK por cima da distribuição anterior com o mesmo certificado para preservar a biblioteca e as sessões.
 
-## Animações e gestos na 1.5.2
+## Layout inspirado no Musicolet
+
+Escolha **Obunga ou Musicolet** em **Configurações → Aparência → Layout**. O novo perfil oferece abas diretas para fila, player, pastas, álbuns, artistas, gêneros, playlists e busca. O player compacto aceita gesto vertical na capa; o miniplayer abre a página do perfil escolhido. Tema, cor, catálogo, biblioteca, fila e downloads são preservados ao trocar a organização.
+
+Playlists reúne favoritas, recentes, mais tocadas e não tocadas, mantendo o download da playlist inteira. Gêneros aparecem conforme os metadados disponíveis. Múltiplas filas persistentes e o equalizador interno do Musicolet não fazem parte deste perfil.
+
+## Animações e gestos
 
 O player e a fila acompanham o arrasto. As transições substituem a animação anterior ao reabrir rapidamente, e o próximo toque intencional funciona logo depois do gesto. Controles e cabeçalhos deixam de selecionar texto ou mostrar o destaque de toque do navegador; foco de teclado, edição de texto e movimento reduzido continuam disponíveis. A biblioteca tem transições ao trocar abas, ordenar e alternar lista/grade.
 
@@ -36,9 +42,9 @@ O download atende às fontes YouTube e YouTube Music disponíveis ao mecanismo d
 
 O aplicativo consulta o [manifesto assinado](https://github.com/abacate77/obunga-music/releases/latest/download/update.json), avisa quando existe uma versão mais recente e verifica assinatura, tamanho e SHA-256 antes de oferecer a instalação. O Android mantém a confirmação do instalador do sistema. Clientes anteriores ao atualizador precisam desta instalação manual inicial.
 
-## Validação da 1.5.2
+## Validação da 1.5.3
 
-Doze suítes JavaScript, cinco testes Python e 14 verificações de gestos no WebView2 nativo aprovadas, incluindo cancelamento, reabertura rápida, arrasto contínuo e redimensionamento. Biblioteca conferida em 320, 390 e 1280 pixels. Conteúdo dos pacotes, assinatura Android, manifesto assinado e downloads públicos conferidos.
+34 casos JavaScript aprovados em 14 arquivos de teste. O pacote final passou em 22 verificações nativas no Windows, com 15 capturas em 320, 390 e 1280 pixels, temas claro/escuro, cancelamento e movimento reduzido. Uma faixa local continuou tocando após trocar os layouts. Conteúdo dos pacotes, certificado Android e manifesto assinado conferidos.
 
 O APK desta versão ainda não foi testado em aparelho físico. Medições no Windows não representam FPS garantido no Android; os testes não cobrem todos os dispositivos ou catálogos.
 
